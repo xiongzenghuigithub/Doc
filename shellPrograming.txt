@@ -1,0 +1,213 @@
+------------------------------------------------------------
+
+	1)选择shell解释器
+		> sh
+		> bash
+		> 等其他版本
+
+		> control+D 结束退出shell环境
+
+	2)建立sehll脚本文件
+		> vim test.sh
+		> 修改脚本文件的权限
+			1)所有用户均可以执行 -- chmod 777 test.sh
+			2)只有文件拥有者可以执行 -- chomod 700 test.sh
+			(
+				注: linux文件权限
+					1) 读 -- r -- 4
+					2) 写 -- w -- 2
+					3) 执行 -- x -- 1
+
+					1) u -- 文件拥有者
+					2) g -- 文件拥有者的 组内用户
+					3) o -- 其他用户
+					4) a -- 所有用户
+			)
+------------------------------------------------------------
+
+修改 .bash_profile
+# for color
+export CLICOLOR=1
+# \h:\W \u\$
+export PS1='\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] '
+# grep
+alias grep='grep --color=always'
+
+------------------------------------------------------------
+# shell脚本代码编写
+echo "What is your name?"
+
+#获取用户输入到后面的变量
+# read person
+# echo "Hello: ${person}"
+
+#定义变量
+name="Mr Job"
+echo "${name}"
+
+# 只读变量
+readonly age="19岁"
+# age="19岁"  这句话会报错, 只读变量必须在定义时候赋予初始值
+echo ${age}
+
+# 删除变量
+unset name
+# unset age	只读变量不能被删除
+
+# 如执行脚本时:  ./test.sh 参数1 参数2 参数3 参数4 .. 参数n
+echo "当前脚本的文件名: $0"								
+echo "当前脚本程序运行在得进程PID: $$"									
+echo "传递给脚本的,第一个参数: $1"			
+echo "传递给脚本的,第二个参数: $2"
+#echo "第N个参数: $n"
+echo "传递给脚本的,所有参数: $@"			
+echo "传递给脚本的,所有参数: $*"
+echo "传递给脚本的,所有参数的总个数 : $#"
+echo "上一条命令执行的结果: $?" #0:成功, 1:失败
+
+# 系统命令
+echo `date`
+echo `who | wc -l`
+echo `date ; uptime`
+
+echo ${address:-"如果前面的变量为空 || 已经被删除unset, 则返回后面的内容或变量的内容"}
+
+echo ${address:="如果前面的变量为空 || 已经被删除unset, 则返回后面的内容或变量的内容 , 并且将后面的值赋给address变量"}
+echo ${address}
+
+echo ${var:+"This is default value"}
+echo "3 - Value of var is $var"
+
+# expr 表达式计算
+a=10
+b=20
+val=`expr $a + $b`
+echo ${val}
+
+# 文件测试运算符
+file="/Users/xiongzenghui/Desktop/test.sh"
+
+if [ -r $file ]	
+then
+	echo "File has read access"
+else 
+	echo "File does not have read access"
+fi 
+
+if [ -w $file ]
+then
+   echo "File has write permission"
+else
+   echo "File does not have write permission"
+fi
+if [ -x $file ]
+then
+   echo "File has execute permission"
+else
+   echo "File does not have execute permission"
+fi
+
+if [ -f $file ]
+then
+   echo "File is an ordinary file"
+else
+   echo "This is sepcial file"
+fi
+
+if [ -d $file ]
+then
+   echo "File is a directory"
+else
+   echo "This is not a directory"
+fi
+
+if [ -s $file ]
+then
+   echo "File size is zero"
+else
+   echo "File size is not zero"
+fi
+
+if [ -e $file ]
+then
+   echo "File exists"
+else
+   echo "File does not exist"
+fi
+
+# 定义数组
+arr=(1 2 3 4 5)
+echo ${arr[2]}
+
+echo "数组的全部元素: ${arr[*]}"
+
+echo "数组长度 = ${#arr[*]}"
+
+#将某个文件的内容全部输入到某个文件中
+cat test.sh > backup
+
+# 显示命令执行结果
+echo `date` > date
+
+# printf函数
+printf "%s %d %c \n" "字符串" 1111 'c'
+
+# case语句
+read aNum
+case $aNum in
+    1) echo 'You select 1' ;;
+    2) echo 'You select 2' ;;
+    3) echo 'You select 3' ;;
+    4) echo 'You select 4' ;;
+    5) echo 'You do not select a number between 1 to 4' ;;
+esac
+
+# 根据执行脚本时传入的参数, 使用case语句
+args1="$1"
+case $args1 in
+	-f)echo "文件" ;;
+	-d)echo "目录" ;;
+esac
+
+# for循环遍历数组
+arr=("haha" "字符串" "sdfsdfdfsd" "11232323" "dawdawdwd")
+for value in ${arr}
+do
+	printf "当前值 = %s\n" $value
+done
+
+# 显示主目录下以 .bash 开头的文件
+for file in $HOME/.bash* #使用 * 做通配符,模糊查询
+do 
+	echo ${file}
+done
+
+# while循环
+COUNTER=0
+while [ $COUNTER -lt 5 ] #-lt 是 "<" 小于号
+do
+    echo $COUNTER
+    COUNTER=`expr $COUNTER + 1` #加号与操作数要有空格
+done
+
+# 定义函数
+function Test () {
+	echo $1 $2
+	return `expr $1 + $2`
+}
+
+Test 1 20		# 方法调用, 直接写方法名字就行了
+echo $?			# 接收返回值方法
+
+
+# source ./test.sh -a -b -c	#代码执行其他得shell脚本
+
+# 获取环境变量
+echo "${COCOS_CONSOLE_ROOT}/xxx/yyy/zzz/sdasd.xml"
+
+------------------------------------------------------------
+source sss.sh -->才能在shell中执行一些cd命令
+
+
+
+
