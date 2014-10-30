@@ -1,0 +1,31 @@
+以2.7升级到3.4为例
+
+
+1.删除原版本
+a)删除系统库中的版本
+sudo rm -R /System/Library/Frameworks/Python.framework/Versions/2.7 
+b)删除Current版本
+sudo rm /System/Library/Frameworks/Python.framework/Versions/Current
+c)删除/usr/bin目录下的python相关文件
+find . -name "py*" -print| xargs rm -rf
+
+2.下载并安装指定的python版本
+到python官网下载要安装的版本，并且安装
+
+3.链接系统库中的Python版本
+a)链接库文件，先将新安装的版本移动到系统版本目录下
+sudo mv /Library/Frameworks/Python.framework/Versions/3.4 /System/Library/Frameworks/Python.framework/Versions 
+
+b)重新链接Current版本
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4 /System/Library/Frameworks/Python.framework/Versions/Current
+
+c)重新链接/usr/bin/下的Python相关的文件
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/pydoc3.4 /usr/bin/pydoc
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4 /usr/bin/python
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/pythonw3.4 /usr/bin/pythonw
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4m-config /usr/bin/python-config
+4.重置环境变量（.bash_profile）
+export PYTHON=$/System/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH
+
+5.有提到要修改group权限
+sudo chown -R root:wheel /System/Library/Frameworks/Python.framework/Versions/3.4
