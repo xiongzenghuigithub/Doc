@@ -1,3 +1,13 @@
+------------------------------------------------
+mac 下得 jdk删除:
+
+1. finder中搜索 JavaAppletPlugin.plugin,然后删除
+
+2. finder中进入 /Library/Java/JavaVirtualMachines,然后删除jdk1.7.xxx
+
+注:删除过程中,需要输入管理员密码
+
+------------------------------------------------
 问题解决:  ( fatal: unable to connect to github.com  )
 
 git config --global url."https://".insteadOf git://
