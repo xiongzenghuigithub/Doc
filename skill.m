@@ -7,6 +7,17 @@ mac 下得 jdk删除:
 
 注:删除过程中,需要输入管理员密码
 
+mac 下得 jdk安装:
+
+-vim ~/.bash_profile，添加如下代码:
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk的安装目录/Contents/Home
+CLASSPAHT=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+PATH=$JAVA_HOME/bin:$PATH:
+export JAVA_HOME
+export CLASSPATH
+export PATH
+
 ------------------------------------------------
 问题解决:  ( fatal: unable to connect to github.com  )
 
