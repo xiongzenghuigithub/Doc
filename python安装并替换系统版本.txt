@@ -1,31 +1,50 @@
-以2.7升级到3.4为例
+先去python的官网下载最新的python，并安装好。
 
+现在要删除mac自带的python，如下：
 
-1.删除原版本
-a)删除系统库中的版本
 sudo rm -R /System/Library/Frameworks/Python.framework/Versions/2.7 
-b)删除Current版本
+
+把第一步里安装好的Python目录移到原本系统所持有的目录位置。 
+
+sudo mv /Library/Frameworks/Python.framework/Versions/3.3 
+
+/System/Library/Frameworks/Python.framework/Versions 
+
+第三步，修改文件所属的Group
+设置Group为wheel，原来系统自带的就是这样的。
+
+sudo chown -R root:wheel /System/Library/Frameworks/Python.framework/Versions/3.3
+
+第四步，更新一下Current的Link
+在Versions的目录里有一个Current的link，是指向当前的Python版本，原始是指向系统自带的Python2.7.2，我们把它删除后，link就失效了，所以需要重新链一下
+
 sudo rm /System/Library/Frameworks/Python.framework/Versions/Current
-c)删除/usr/bin目录下的python相关文件
-find . -name "py*" -print| xargs rm -rf
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.3 /System/Library/Frameworks/Python.framework/Versions/Current
 
-2.下载并安装指定的python版本
-到python官网下载要安装的版本，并且安装
+第五步，重新链接可执行文件
 
-3.链接系统库中的Python版本
-a)链接库文件，先将新安装的版本移动到系统版本目录下
-sudo mv /Library/Frameworks/Python.framework/Versions/3.4 /System/Library/Frameworks/Python.framework/Versions 
+1) 先把系统原来的执行文件删掉
 
-b)重新链接Current版本
-sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4 /System/Library/Frameworks/Python.framework/Versions/Current
+sudo rm /usr/bin/pydoc
+sudo rm /usr/bin/python
+sudo rm /usr/bin/pythonw
+sudo rm /usr/bin/python-config
 
-c)重新链接/usr/bin/下的Python相关的文件
-sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/pydoc3.4 /usr/bin/pydoc
-sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4 /usr/bin/python
-sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/pythonw3.4 /usr/bin/pythonw
-sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4m-config /usr/bin/python-config
-4.重置环境变量（.bash_profile）
-export PYTHON=$/System/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH
+2) 建立新的链接
 
-5.有提到要修改group权限
-sudo chown -R root:wheel /System/Library/Frameworks/Python.framework/Versions/3.4
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.3/bin/pydoc3.3 /usr/bin/pydoc
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3 /usr/bin/python
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.3/bin/pythonw3.3 /usr/bin/pythonw
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3m-config /usr/bin/python-config
+
+最后，更新一下.bash_profile文件
+
+cd ~ vim .bash_profile (只要能编辑就行) 插入新的Python路径
+
+# Setting PATH for Python 3.3
+
+# The orginal version is saved in .bash_profile.pysave
+PATH="/System/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
+export PATH
+
+打开命令行，输入python,即可
