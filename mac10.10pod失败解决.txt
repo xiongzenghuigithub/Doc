@@ -1,0 +1,14 @@
+
+1. 卸载cocoapods 
+2. 重新安装cocoapods
+
+sudo gem uninstall cocoapods 
+
+gem sources --remove https://rubygems.org/
+gem sources -a http://ruby.taobao.org/
+
+sudo gem install xcodeproj 
+
+sudo gem install cocoapods
+
+pod setup
