@@ -1,1 +1,0 @@
-pkgutil –expand /Volumes/JavaForMacOSX10.6.pkg /tmp/jdk6.unpkg
