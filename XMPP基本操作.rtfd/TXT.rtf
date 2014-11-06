@@ -1,0 +1,1450 @@
+{\rtf1\ansi\ansicpg936\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green61\blue204;\red0\green45\blue153;\red29\green133\blue25;
+\red217\green11\blue0;\red0\green145\blue206;\red218\green119\blue254;\red32\green60\blue63;\red180\green0\blue98;
+\red48\green111\blue121;\red255\green39\blue18;\red198\green50\blue253;\red38\green38\blue38;\red68\green137\blue147;
+\red46\green13\blue110;\red174\green0\blue240;\red77\green0\blue158;\red85\green142\blue40;\red0\green68\blue254;
+\red186\green0\blue17;\red46\green111\blue253;\red92\green38\blue153;\red100\green56\blue32;\red14\green14\blue255;
+\red0\green11\blue255;\red110\green32\blue13;\red102\green177\blue50;}
+\margl1440\margr1440\vieww25320\viewh14600\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs28 \cf0 \'d2\'bb\'a1\'a2
+\f1 \cf2 XMPP
+\f0 \'b8\'c5\'c4\'ee
+\f1 \cf0 \
+\
+	1) XMPP: 
+\f0 \'d6\'bb\'ca\'c7\'d2\'bb\'cc\'d7\'bc\'b4\'ca\'b1\'cd\'a8\'d1\'b6\'b5\'c4\'d0\'ad\'d2\'e9\'bd\'d3\'bf\'da\'a3\'ac\'b2\'a2\'c3\'bb\'d3\'d0\'c8\'ce\'ce\'f1\'b5\'c4\'ca\'b5\'cf\'d6\'b4\'fa\'c2\'eb
+\f1 \
+	2) 
+\f0 \'ca\'b5\'cf\'d6
+\f1 XMPP
+\f0 \'d0\'ad\'d2\'e9\'b5\'c4\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 : Openfire \'85
+\f0 \'b5\'c8\'b5\'c8
+\f1 \
+\
+
+\f0 \'b6\'fe\'a1\'a2\cf3 \'cb\'f9\'d3\'d0\'b5\'c4
+\f1 XMPP
+\f0 \'cf\'e0\'b9\'d8\'b2\'d9\'d7\'f7\'a1\'a2\'b4\'fa\'c0\'ed\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'a1\'a2\'b6\'bc\'d0\'b4\'d4\'da
+\f1 AppDelegate
+\f0 \'d6\'d0
+\f1 , 
+\f0 \'b1\'e3\'d3\'da\'ce\'ac\'bb\'a4
+\f1 \
+\
+		XMPP
+\f0 \'d0\'ad\'d2\'e9\'d6\'d0\'b5\'c4\'b1\'c8\'bd\'cf\'b3\'a3\'d3\'c3\'b5\'c4\'c0\'e0
+\f1 :\
+			1) XMPPStream\
+			2) XMPPJID\
+			3) XMPPPresence\
+			) XMPPRoster\
+				- XMPPMesage(
+\f0 \'b7\'e2\'d7\'b0\'d2\'bb\'b8\'f6
+\f1 xml message)\
+			) XMPPRoom\
+\
+			) IQ
+\f0 \'c7\'eb\'c7\'f3
+\f1  \'97 
+\f0 \'bb\'f9\'d3\'da
+\f1 XML
+\f0 \'b8\'f1\'ca\'bd\'b5\'c4\'b6\'d4\'cf\'f3\'bb\'af
+\f1 \
+				- XMLEelement\
+				- IQ
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4
+\f1 set\\get, result\\error\
+					- set:  
+\f0 \cf4 \CocoaLigature0 \'b7\'a2\'cb\'cd\'ca\'fd\'be\'dd\'b8\'f8\'b1\'f0\'c8\'cb
+\f1 \
+					\cf3 \CocoaLigature1 - get: 
+\f0 \cf4 \CocoaLigature0 \'b4\'d3\'b1\'f0\'c8\'cb\'c4\'c7\'bb\'f1\'c8\'a1\'ca\'fd\'be\'dd
+\f1 \cf3 \CocoaLigature1 \
+					\
+					- result: \cf4 \CocoaLigature0 IQ
+\f0 \'c7\'eb\'c7\'f3\'b3\'c9\'b9\'a6\'ba\'f3\'b5\'c4\'cf\'ec\'d3\'a6\'ca\'fd\'be\'dd
+\f1 \
+					\cf3 \CocoaLigature1 - error:  \cf4 \CocoaLigature0 IQ
+\f0 \'c7\'eb\'c7\'f3\'ca\'a7\'b0\'dc
+\f1 \
+			\
+					(
+\f0 \'d7\'a2\'d2\'e2
+\f1 :  result
+\f0 \'d4\'aa\'cb\'d8\'b5\'c4
+\f1 ID 
+\f0 \'d2\'bb\'b6\'a8\'d2\'aa\'d3\'eb
+\f1  set/get
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4
+\f1 ID 
+\f0 \'d2\'bb\'d6\'c2
+\f1 )\cf3 \CocoaLigature1 \
+				\
+			) 
+\f0 \'b8\'f7\'d6\'d6\'c4\'a3\'bf\'e9\'b6\'d4\'d3\'a6\'b5\'c4
+\f1 CoreDataStorage\
+\cf0 \
+\
+
+\f0 \'c8\'fd\'a1\'a2
+\f1 \cf2 XMPPStream
+\f0 \'b6\'d4\'cf\'f3
+\f1 \cf0 :  
+\f0 \'bb\'f9\'b1\'be\'c9\'cf\'cb\'f9\'d3\'d0\'b5\'c4\'b2\'d9\'d7\'f7\'cd\'a8\'b9\'fd\'b8\'c3\'b6\'d4\'cf\'f3\'d6\'b4\'d0\'d0
+\f1 \
+	\
+	1) 
+\f0 \'b5\'a5\'c0\'fd\'c4\'a3\'ca\'bd\'c9\'e8\'bc\'c6
+\f1 \
+	\
+		
+\f0 \'d4\'da
+\f1 AppDelegate.h
+\f0 \'d6\'d0\'c9\'f9\'c3\'f7\'bb\'f1\'c8\'a1\'b5\'a5\'c0\'fd\'be\'b2\'cc\'ac
+\f1 XMPPStream
+\f0 \'b6\'d4\'cf\'f3\'b7\'bd\'b7\'a8
+\f1 \
+		+ (XMPPStrean *)sharedXMPPStream;\
+\
+		
+\f0 \'d4\'da
+\f1 AppDelegate.m
+\f0 \'d6\'d0\'ca\'b5\'cf\'d6\'b5\'a5\'c0\'fd\'b7\'bd\'b7\'a8
+\f1 \
+		+ (XMPPStrean *)sharedXMPPStream \{\
+\
+			static XMPPStream *sharedXMPPStream = nil;\
+			if (sharedXMPPStream) \{\
+				\cf5 //
+\f0 \'ca\'b5\'c0\'fd\'bb\'af
+\f1 XMPPStream\cf0 \
+				sharedXMPPStream = [[XMPPStream alloc] init];\
+				\cf5 //
+\f0 \'b8\'f8
+\f1 XMPPStream
+\f0 \'cc\'ed\'bc\'d3\'b4\'fa\'c0\'ed\'ba\'cd\'b2\'d9\'d7\'f7\'b6\'d3\'c1\'d0
+\f1 \cf0 \
+				[sharedXMPPStream addDelegate:
+\f0 \'b4\'fa\'c0\'ed\'b6\'d4\'cf\'f3
+\f1  delegateQueue:
+\f0 \'b8\'f8\'d2\'bb\'b8\'f6\'b5\'a5\'c0\'fd\'b6\'d3\'c1\'d0
+\f1 ];\
+				\cf5 //
+\f0 \'b8\'f8
+\f1 XMPPStream
+\f0 \'c9\'e8\'d6\'c3\'d6\'f7\'bb\'fa\'c3\'fb
+\f1 \cf0 \
+				[sharedXMPPStream setHostName:@\'93XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'cb\'f9\'d4\'da\'bc\'c6\'cb\'e3\'bb\'fa\'b5\'c4
+\f1 IP
+\f0 \'b5\'d8\'d6\'b7
+\f1  (
+\f0 \'c8\'e7\'b9\'fb\'d4\'da\'b5\'b1\'c7\'b0\'bb\'fa\'c6\'f7\'c9\'cf\'b2\'e2\'ca\'d4\'b3\'cc\'d0\'f2\'a3\'ac
+\f1  
+\f0 \'cc\'ee\'d0\'b4
+\f1 127.0.0.1)\'94];\
+				\cf5 //
+\f0 \'b8\'f8
+\f1 XMPPStream
+\f0 \'c9\'e8\'d6\'c3\'d6\'f7\'bb\'fa\'b5\'c4\'b6\'cb\'bf\'da
+\f1 \
+				[\cf0 sharedXMPPStream setHostPort:XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'cb\'f9\'d4\'da\'bc\'c6\'cb\'e3\'bb\'fa\'b5\'c4\'b6\'cb\'bf\'da\'ba\'c5
+\f1 \cf5 ];	\cf0 \
+			\}\
+		\}\
+\
+\
+
+\f0 \'cb\'c4\'a1\'a2\cf3 \'ca\'b9\'d3\'c3
+\f1 XMPPStream
+\f0 \'b6\'d4\'cf\'f3
+\f1 , 
+\f0 \'b5\'c7\'c2\'bc
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \cf0 \
+	\
+	\cf5 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , 
+\f0 \'c9\'e8\'d6\'c3\'b5\'b1\'c7\'b0\'b5\'c7\'c2\'bc\'d3\'c3\'bb\'a7\'b5\'c4
+\f1 XMPPJID(\cf6 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'ca\'c7\'b8\'f9\'be\'dd
+\f1 XMPPJID
+\f0 \'c0\'b4\'c7\'f8\'b7\'d6\'c3\'bf\'d2\'bb\'b8\'f6\'d3\'c3\'bb\'a7\'ba\'cd\'c1\'ac\'bd\'d3
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \cf5 )\
+	\cf0 [[self sharedXMPPStream] setMyJID:[XMPPJID jidWithString:@\'93
+\f0 \cf7 \'d3\'c3\'bb\'a7\'c3\'fb
+\f1 @XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c5\'e4\'d6\'c3\'b5\'c4\'c3\'fb\'d7\'d6
+\f1 \cf0 (
+\f0 \'d7\'a2\'d2\'e2
+\f1 :
+\f0 \'ca\'c7\'b7\'fe\'ce\'f1\'c6\'f7\'b5\'c4\'c3\'fb\'d7\'d6
+\f1 )\'94] ];\
+\
+	\cf5 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 , 
+\f0 \'c1\'ac\'bd\'d3\'b5\'bd
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \
+	\cf0 [[self sharedXMPPStream] connectWithTimeout:
+\f0 \'c1\'ac\'bd\'d3\'b3\'ac\'ca\'b1\'ca\'b1\'bc\'e4
+\f1  error:nil];\
+\
+	\cf5 //
+\f0 \'b5\'da\'c8\'fd\'b2\'bd
+\f1 , 
+\f0 \'bd\'f8\'c8\'eb\'b5\'bd
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c1\'ac\'bd\'d3\'ba\'f3\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 (
+\f0 \'c1\'ac\'bd\'d3\'b3\'c9\'b9\'a6
+\f1 )\
+	\cf0 - (void)xmppStream:(XMPPStream *)sender socketDidConnect:(GCDAsyncSocket *)socket \{\
+		\
+		\cf5 //
+\f0 \'b5\'da\'cb\'c4\'b2\'bd
+\f1 , 
+\f0 \'d1\'e9\'d6\'a4\'b5\'c7\'c2\'bc\'c3\'dc\'c2\'eb
+\f1 \
+		\cf0 [[self sharedXMPPStream] \cf8 \CocoaLigature0 authenticateWithPassword:
+\f0 \'b1\'a3\'b4\'e6\'b5\'c4\'d3\'c3\'bb\'a7\'c3\'dc\'c2\'eb
+\f1  error:nil ];\cf0 \CocoaLigature1 \
+	\}\
+\
+	\cf5 //
+\f0 \'b5\'da\'ce\'e5\'b2\'bd
+\f1 , 
+\f0 \'d1\'e9\'d6\'a4\'b3\'c9\'b9\'a6\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1  
+\f0 \'bb\'f2
+\f1  
+\f0 \'d1\'e9\'d6\'a4\'ca\'a7\'b0\'dc\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 \
+	\cf0 \CocoaLigature0 - (\cf9 void\cf0 )xmppStreamDidAuthenticate:(\cf10 XMPPStream\cf0  *)sender\{\
+		\
+\cf5 \CocoaLigature1 		//
+\f0 \'b5\'da\'c1\'f9\'b2\'bd
+\f1 , 
+\f0 \'b7\'a2\'cb\'cd\'d3\'c3\'bb\'a7\'c9\'cf\'cf\'df\'cd\'a8\'d6\'aa
+\f1 \
+		\cf10 \CocoaLigature0 XMPPPresence\cf0  *prescence = [\cf10 XMPPPresence\cf0  \cf8 presence\cf0 ];\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0       [[\cf9 self\cf0  \CocoaLigature1 sharedXMPPStream\CocoaLigature0 ] \cf8 sendElement\cf0 :prescence];\
+\
+	  //
+\f0 \'bd\'f8\'c8\'eb
+\f1 app
+\f0 \'d6\'f7\'bd\'e7\'c3\'e6
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 	\}\
+\
+	- (\cf9 void\cf0 )xmppStream:(\cf10 XMPPStream\cf0  *)sender didNotAuthenticate:(\cf10 DDXMLElement\cf0  *)error\{\
+		\
+		//
+\f0 \'d1\'e9\'d6\'a4\'b2\'bb\'cd\'a8\'b9\'fd\'a3\'ac\'b7\'b5\'bb\'d8\'b5\'c7\'c2\'bc\'bd\'e7\'c3\'e6
+\f1 \
+		\
+	\}\
+\
+	\cf11 //
+\f0 \'b5\'da\'c1\'f9\'b2\'bd
+\f1 , 
+\f0 \'c6\'e4\'cb\'fb\'d4\'da\'cf\'df\'d3\'c3\'bb\'a7\'bd\'d3\'ca\'d5\'b5\'b1\'b5\'b1\'c7\'b0\'d3\'c3\'bb\'a7\'b5\'c4\'c9\'cf\'cf\'df\'cd\'a8\'d6\'aa
+\f1 \cf0 \
+	- (\cf9 void\cf0 )xmppStream:(\cf10 XMPPStream\cf0  *)sender didReceivePresence:(\cf10 XMPPPresence\cf0  *)presence\{\
+		\
+		//
+\f0 \'b1\'a3\'b4\'e6\'b5\'bd\'d3\'c3\'bb\'a7\'b5\'c4\'d4\'da\'cf\'df\'d3\'c3\'bb\'a7\'ca\'fd\'d7\'e9
+\f1 \
+		//
+\f0 \'cb\'a2\'d0\'c2
+\f1 tableView
+\f0 \'cf\'d4\'ca\'be\'b8\'fc\'d0\'c2\'d4\'da\'cf\'df\'d3\'c3\'bb\'a7
+\f1 \
+	\}	\CocoaLigature1 \
+\
+\
+	\
+
+\f0 \'ce\'e5\'a1\'a2\cf3 \'ca\'b9\'d3\'c3
+\f1 XMPPStream
+\f0 \'b6\'d4\'cf\'f3
+\f1 , 
+\f0 \'d7\'a2\'b2\'e1
+\f1 XMPP
+\f0 \'d5\'cb\'ba\'c5
+\f1 \
+	\
+	\cf5 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , 
+\f0 \'d2\'f2\'ce\'aa\'c3\'bb\'d3\'d0\'d5\'cb\'ba\'c5
+\f1 , 
+\f0 \'cb\'f9\'d2\'d4\'d3\'c3\'bb\'a7\'c3\'fb\'ce\'aa\'bf\'d5\'b5\'c4\'d0\'ce\'ca\'bd
+\f1  
+\f0 \'bd\'a8\'c1\'a2
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c1\'ac\'bd\'d3
+\f1 \cf3 	\cf0 [[self sharedXMPPStream] connectWithTimeout:
+\f0 \'c1\'ac\'bd\'d3\'b3\'ac\'ca\'b1\'ca\'b1\'bc\'e4
+\f1  error:nil];\cf3 \
+\
+	\cf5 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 , 
+\f0 \'c9\'e8\'d6\'c3\'d2\'aa\'d7\'a2\'b2\'e1\'b5\'c4\'d3\'c3\'bb\'a7\'c3\'fb
+\f1 \
+\cf3 	[\cf0 [self sharedXMPPStream] setMyJID:[NSString stringWithFormat:@\'93\cf12 zhangsan@xmpp
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c3\'fb\'d7\'d6
+\f1 \cf0 \'94]]\cf3 \
+\
+\cf0 	\cf5 //
+\f0 \'b5\'da\'c8\'fd\'b2\'bd
+\f1 , 
+\f0 \'bd\'f8\'d0\'d0\'d7\'a2\'b2\'e1
+\f1 \
+	[\cf0 \CocoaLigature0 [\cf9 self\cf0  \CocoaLigature1 sharedXMPPStream\CocoaLigature0 ] \cf13 \CocoaLigature1 registerWithPassword:
+\f0 \'d3\'c3\'bb\'a7\'b5\'c7\'c2\'bc\'c3\'dc\'c2\'eb
+\f1  error:nil];\cf5 \
+\
+	//
+\f0 \'b5\'da\'cb\'c4\'b2\'bd
+\f1 , 
+\f0 \'d7\'a2\'b2\'e1\'b3\'c9\'b9\'a6\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1  
+\f0 \'bb\'f2
+\f1  
+\f0 \'d7\'a2\'b2\'e1\'ca\'a7\'b0\'dc\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 \
+\
+	\cf13 //
+\f0 \'b3\'c9\'b9\'a6
+\f1 \cf5 \
+	\cf13 - (void)xmppStreamDidRegister:(XMPPStream *)sender \{\
+		\
+		//
+\f0 \'b5\'c7\'c2\'bc
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \
+		\cf0 [[self sharedXMPPStream] \cf8 \CocoaLigature0 authenticateWithPassword:
+\f0 \'b1\'a3\'b4\'e6\'b5\'c4\'d3\'c3\'bb\'a7\'c3\'dc\'c2\'eb
+\f1  error:nil ];\cf13 \CocoaLigature1 \
+	\}\
+\
+	//
+\f0 \'ca\'a7\'b0\'dc
+\f1 \
+	\cf0 - (void)xmppStream:(XMPPStream *)sender didNotRegister:(NSXMLElement *)error \{\
+		//
+\f0 \'bc\'cc\'d0\'f8\'d7\'a2\'b2\'e1
+\f1 \
+	\}\
+\
+\
+
+\f0 \'c1\'f9\'a1\'a2\cf2 \'ba\'c3\'d3\'d1\'b2\'d9\'d7\'f7
+\f1 \
+	\
+	
+\f0 \'d2\'bb\'a3\'a9\'b0\'d1\'ba\'c3\'d3\'d1\'b2\'d9\'d7\'f7\'b5\'c4
+\f1 XMPP
+\f0 \'c4\'a3\'bf\'e9\'bc\'a4\'bb\'ee\'b5\'bd\'b5\'b1\'c7\'b0
+\f1 XMPPStream
+\f0 \'b6\'d4\'cf\'f3
+\f1 \
+\
+		\cf0 1)
+\f0 \'ca\'b5\'c0\'fd\'bb\'af\'ba\'c3\'d3\'d1\'b2\'d9\'d7\'f7\'c4\'a3\'bf\'e9
+\f1 \cf2 \
+		\cf0 \CocoaLigature0 XMPPRosterCoreDataStorage\cf10   *\cf14 rosterCoreDataStorage\cf0  = [\cf10 XMPPRosterCoreDataStorage\cf0  \cf8 sharedInstance\cf0 ];\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0 	  XMPPRoster *\cf14 roster\cf0  = [[\cf10 XMPPRoster\cf0  \cf15 alloc\cf0 ] \cf8 initWithRosterStorage\cf0 :\cf14 rosterCoreDataStorage\cf0 ];\
+	  \
+	  \cf4 //
+\f0 \'c9\'e8\'d6\'c3
+\f1 XMPPRoster
+\f0 \'d7\'d4\'b6\'af\'bd\'d3\'ca\'d5\'ba\'c3\'d3\'d1\'b6\'a9\'d4\'c4\'b5\'c4\'c7\'eb\'c7\'f3
+\f1  (
+\f0 \'bf\'c9\'d2\'d4\'c8\'c3\'b6\'d4\'b7\'bd\'d7\'d4\'b6\'af\'ca\'d5\'b5\'bd\'ba\'c3\'d3\'d1\'cc\'ed\'bc\'d3\'b5\'c4\'c7\'eb\'c7\'f3
+\f1 )\cf0 \
+	  [\cf14 roster\cf0  \cf8 setAutoAcceptKnownPresenceSubscriptionRequests\cf0 :\cf9 YES\cf0 ];\
+		\
+	  2)
+\f0 \'d7\'a2\'b2\'e1\'b5\'bd
+\f1 XMPPStream
+\f0 \'b6\'d4\'cf\'f3
+\f1 \
+	  [\cf14 roster\cf0  \cf8 activate\cf0 :\cf14 _xmppStream\cf0 ];\
+\
+	  3)
+\f0 \'b8\'f8\'ba\'c3\'d3\'d1\'b2\'d9\'d7\'f7\'c4\'a3\'bf\'e9\'cc\'ed\'bc\'d3\'b4\'fa\'c0\'ed\'b6\'d4\'cf\'f3\'ba\'cd\'b2\'d9\'d7\'f7\'b6\'d3\'c1\'d0
+\f1 \
+	  [\cf14 roster\cf0  \cf8 addDelegate\cf0 :\cf9 self\cf0  \cf8 delegateQueue\cf0 :
+\f0 \cf14 \'b8\'f8\'d2\'bb\'b8\'f6\'c8\'ab\'be\'d6\'b5\'a5\'c0\'fd\'b6\'d3\'c1\'d0
+\f1 \cf0 ];\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf2 \CocoaLigature1 \
+	\
+	
+\f0 \'b6\'fe\'a3\'a9\'cc\'ed\'bc\'d3\'ba\'c3\'d3\'d1
+\f1 \
+		\
+	\cf5 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , 
+\f0 \'b9\'b9\'d4\'ec\'d2\'aa\'cc\'ed\'bc\'d3\'b5\'c4\'ba\'c3\'d3\'d1\'b5\'c4
+\f1 XMPPJID\
+	\cf10 \CocoaLigature0 XMPPJID\cf0  *JID = [\cf10 XMPPJID\cf0  \cf8 jidWithString\cf0 :[NSString stringWithFormat:@\'93
+\f0 \'b4\'fd\'bc\'d3\'ba\'c3\'d3\'d1\'b5\'c4\'d3\'c3\'bb\'a7\'c3\'fb
+\f1 @\cf16 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c3\'fb\'d7\'d6\'bb\'f2
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 IP
+\f0 \'b5\'d8\'d6\'b7
+\f1 \cf0 \'94]];\
+	\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 , 
+\f0 \CocoaLigature0 \'b7\'a2\'cb\'cd\'bc\'d3\'ba\'c3\'d3\'d1\'c7\'eb\'c7\'f3
+\f1 \
+	\cf0 [\CocoaLigature1 [self sharedXMPPStream] \cf8 \CocoaLigature0 subscribePresenceToUser:JID];\
+\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'c8\'fd\'b2\'bd
+\f1 , 
+\f0 \'b1\'bb\'cc\'ed\'bc\'d3\'ba\'c3\'d3\'d1\'b5\'c4\'d3\'c3\'bb\'a7\'bd\'d3\'ca\'d5\'b5\'bd\'ba\'c3\'d3\'d1\'cc\'ed\'bc\'d3\'c7\'eb\'c7\'f3\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'d6\'b4\'d0\'d0
+\f1 \
+	\cf0 \CocoaLigature0 - (\cf9 void\cf0 )xmppRoster:(\cf10 XMPPRoster\cf0  *)sender didReceivePresenceSubscriptionRequest:(\cf10 XMPPPresence\cf0  *)presence \{\
+		\
+		\cf4 //
+\f0 \'c8\'a1\'b5\'c3\'ba\'c3\'d3\'d1\'d7\'b4\'cc\'ac
+\f1 \cf0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf0       \cf17 NSString\cf0  *presenceType = [presence \cf8 type\cf0 ];\
+\
+	  \cf18 //
+\f0 \'b9\'b9\'d4\'ec\'ba\'c3\'d3\'d1\'cc\'ed\'bc\'d3\'c7\'eb\'c7\'f3\'b5\'c4\'d3\'c3\'bb\'a7\'b5\'c4
+\f1 XMPPJID\
+	  \cf10 XMPPJID\cf0  *fromUserJID = [\cf10 XMPPJID\cf0  \cf8 jidWithString\cf0 :[[presence \cf8 from\cf0 ] \cf8 user\cf0 ]];\
+\
+	  \cf4 //
+\f0 \'b4\'a6\'c0\'ed\'cc\'ed\'bc\'d3\'ba\'c3\'d3\'d1\'c7\'eb\'c7\'f3
+\f1 \
+	  \cf0 [\cf14 roster\cf0  \cf8 acceptPresenceSubscriptionRequestFrom\cf0 :fromUserJID \cf8 andAddToRoster\cf0 :\cf9 YES\cf0 ];\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 	\}\
+\
+	\cf5 //
+\f0 \'b5\'da\'cb\'c4\'b2\'bd
+\f1 , 
+\f0 \'d7\'d4\'b6\'af\'b7\'a2\'cb\'cd\'c9\'cf\'cf\'df\'cd\'a8\'d6\'aa
+\f1 \
+\
+	\
+	
+\f0 \cf19 \'c8\'fd
+\f1 ) 
+\f0 \'c9\'be\'b3\'fd\'ba\'c3\'d3\'d1
+\f1 \
+	\
+	\cf0  \cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , 
+\f0 \CocoaLigature0 \'b9\'b9\'d4\'ec\CocoaLigature1 \'d2\'aa\'c9\'be\'b3\'fd\'ba\'c3\'d3\'d1\'b5\'c4
+\f1 XMPPJID\cf0 \CocoaLigature0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf0     \cf10 XMPPJID\cf0  *removeUserJID = [\cf10 XMPPJID\cf0  \cf8 jidWithString\cf0 :[\cf17 NSString\cf0  \cf15 stringWithFormat\cf0 :\cf20 @"%@@%@"\cf0 ,userName, \cf16 @"qq.xzh.com"\cf0 ] ];\
+\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 , 
+\f0 \'c9\'be\'b3\'fd\'ba\'c3\'d3\'d1
+\f1 \
+	\cf0 [\cf14 \CocoaLigature0 roster \cf8 removeUser:\cf0 removeUserJID];\
+\
+\
+   
+\f0 \cf19 \'cb\'c4
+\f1 )
+\f0 \'b2\'e9\'d1\'af\'ba\'c3\'d3\'d1\'c1\'d0\'b1\'ed
+\f1 \
+\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , 
+\f0 \'ca\'b5\'c0\'fd\'bb\'af
+\f1 \CocoaLigature0 NSFetchedResultsController\
+	NSFetchedResultsController *fetchVC = \cf0 [[\cf17 NSFetchedResultsController\cf0  \cf15 alloc\cf0 ] \
+			\cf15 initWith\cf21 FetchRequest\cf0 :\cf12 [NSFetchRequest fetchRequestWithEntityName:@"XMPPUserCoreDataStorageObject"]\cf0 \
+			\cf21 managedObjectContext\cf0 :\cf12 [[APPDelegate
+\f0 \'b6\'d4\'cf\'f3
+\f1  getXMPPRosterCoreDataStorage] mainThreadManagedObjectContext]\
+\cf0 			\cf15 sectionNameKeyPath\cf0 :\cf9 nil\cf0  \
+			\cf15 cacheName\cf0 :\cf9 nil\cf0 ];\
+	\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 ,  
+\f0 \'c9\'e8\'d6\'c3
+\f1 \cf12 \CocoaLigature0 NSFetchRequest
+\f0 \'b5\'c4\'c5\'c5\'d0\'f2\'b7\'bd\'ca\'bd
+\f1 \
+\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'c8\'fd\'b2\'bd
+\f1 ,  
+\f0 \'d6\'b4\'d0\'d0\'b2\'e9\'d1\'af
+\f1 \
+	\cf0 [\cf5 \CocoaLigature0 fetchVC \cf15 performFetch:nil];\
+\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'cb\'c4\'b2\'bd
+\f1 ,  
+\f0 \'b8\'fc\'d0\'c2
+\f1 tableView
+\f0 \'cf\'d4\'ca\'be\'ba\'c3\'d3\'d1\'c1\'d0\'b1\'ed
+\f1 \
+\cf0 	1)\CocoaLigature0 numberOfSectionsInTableView\
+		\cf9 return\cf0  \cf14 _fetchRsultVC\cf0 .\cf22 sections\cf0 .\cf22 count\cf0 ;\
+	\
+	2)numberOfRowsInSection\
+		\cf9 id\cf0 <\cf17 NSFetchedResultsSectionInfo\cf0 > dataList = \cf14 _fetchRsultVC\cf0 .\cf22 sections\cf0 [section];\
+		\cf9 return\cf0  [dataList \cf15 numberOfObjects\cf0 ];\
+	\
+	3)cellForRowAtIndexPath\
+		\cf10 XMPPUserCoreDataStorageObject\cf0  *user = [\cf14 _fetchRsultVC\cf0  \cf15 objectAtIndexPath\cf0 :indexPath];\
+		[cell.\cf22 detailTextLabel\cf0  \cf15 setText\cf0 :user.\cf14 displayName\cf0 ];\
+\
+	4)didSelectRowAtIndexPath\
+		\cf10 XMPPUserCoreDataStorageObject\cf0  *user = [\cf14 _fetchRsultVC\cf0  \cf15 objectAtIndexPath\cf0 :indexPath];\
+		pushViewController
+\f0 \'ca\'b1
+\f1 ,
+\f0 \'b4\'ab\'b5\'dd
+\f1 user
+\f0 \'b2\'ce\'ca\'fd
+\f1 \
+\
+\
+
+\f0 \'c1\'f9\'a1\'a2\cf19 \'cf\'fb\'cf\'a2\'b2\'d9\'d7\'f7
+\f1 \
+	\
+	
+\f0 \'d2\'bb\'a3\'a9\'b7\'a2\'cb\'cd\'cf\'fb\'cf\'a2
+\f1 \
+		\
+	1)
+\f0 \'ce\'c4\'b1\'be\'cf\'fb\'cf\'a2
+\f1 \
+	\
+	
+\f0 \'b7\'a2\'cb\'cd\'cf\'fb\'cf\'a2\'b5\'c4
+\f1 xml
+\f0 \'b8\'f1\'ca\'bd
+\f1 :\
+	\cf4 <message type="chat" to="xiaoming@example.com">\
+ 
+\f0 \'a1\'a1
+\f1    		<body>Hello World!<body />\
+ 	<message />\
+	\
+	
+\f0 \'b4\'fa\'c2\'eb
+\f1 :\
+		\
+	//1) 
+\f0 \'b9\'b9\'d4\'ec\'cf\'fb\'cf\'a2\'cc\'e5
+\f1 XML
+\f0 \'b8\'f9\'d4\'aa\'cb\'d8
+\f1  -- <message />\cf0 \
+    \cf23 NSXMLElement\cf0  *message = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"message"\cf0 ];\
+    \
+    \cf4 //2) 
+\f0 \'b8\'f8
+\f1 <message /> 
+\f0 \'cc\'ed\'bc\'d3\'b2\'ce\'ca\'fd
+\f1 to
+\f0 \'d2\'d4\'bc\'b0\'b2\'ce\'ca\'fd\'d6\'b5
+\f1 \cf0 \
+    [message \cf8 addAttributeWithName\cf0 :\cf20 @"to"\cf0  \cf8 stringValue\cf0 :@\'93
+\f0 \'bd\'d3\'ca\'d5\'cf\'fb\'cf\'a2\'b5\'c4\'d3\'c3\'bb\'a7
+\f1 JID
+\f0 \'d7\'d6\'b7\'fb\'b4\'ae
+\f1 (zhangsan@xmpp
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c3\'fb\'d7\'d6
+\f1 )\'94];\
+    \
+    \cf4 //3)
+\f0 \'b8\'f8
+\f1 <message /> 
+\f0 \'cc\'ed\'bc\'d3\'b2\'ce\'ca\'fd
+\f1 type
+\f0 \'d2\'d4\'bc\'b0\'b2\'ce\'ca\'fd\'d6\'b5
+\f1 \cf0 \
+    [message \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"chat"\cf0 ];\
+    \
+    \cf4 //4) 
+\f0 \'b9\'b9\'d4\'ec\'cf\'fb\'cf\'a2\'cc\'e5
+\f1 XML
+\f0 \'d7\'d3\'d4\'aa\'cb\'d8
+\f1  -- <body />\cf0 \
+    \cf23 NSXMLElement\cf0  *body = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"body"\cf0 ];\
+    \
+    \cf4 //5) 
+\f0 \'b8\'f8
+\f1  <body />
+\f0 \'d4\'aa\'cb\'d8\'c9\'e8\'d6\'c3\'d6\'b5
+\f1 \cf0 \
+    [body \cf8 setStringValue\cf0 :\cf20 @"
+\f0 \'c1\'c4\'cc\'ec\'cf\'fb\'cf\'a2\'c4\'da\'c8\'dd
+\f1 \'94\cf0 ];\
+    \
+    \cf4 //6) <message /> 
+\f0 \'cc\'ed\'bc\'d3\'d7\'d3\'d4\'aa\'cb\'d8
+\f1  <body />\cf0 \
+    [message \cf8 addChild\cf0 :body];\
+\
+	\cf4 //7) 
+\f0 \'b7\'a2\'cb\'cd
+\f1 <message />\
+\cf0 	[[\cf9 self\cf0  \CocoaLigature1 sharedXMPPStream\CocoaLigature0 ] sendElement:message];\
+\
+	\cf19 2
+\f0 \'a3\'a9\'b7\'a2\'cb\'cd\'c6\'e4\'cb\'fb\'d7\'d4\'b6\'a8\'d2\'e5\'b8\'f1\'ca\'bd\'b5\'c4\'cf\'fb\'cf\'a2
+\f1  (
+\f0 \'ca\'b9\'d3\'c3\'b4\'f8\'c4\'da\'b4\'ab\'ca\'e4
+\f1  \'97 
+\f0 \'b4\'ab\'ca\'e4
+\f1 XMPP XML
+\f0 \'d7\'d6\'b7\'fb\'b4\'ae\'c1\'f7
+\f1 )\
+	\
+	
+\f0 \'b4\'ab\'ca\'e4\'cd\'be\'be\'b6\'a3\'ba
+\f1 \
+		
+\f0 \cf4 \'bf\'cd\'bb\'a7\'b6\'cb
+\f1 A
+\f0 \'b7\'a2\'cb\'cd
+\f1 XML
+\f0 \'ca\'fd\'be\'dd\'c1\'f7
+\f1  --> XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1  --> 
+\f0 \'bf\'cd\'bb\'a7\'b6\'cb
+\f1 B
+\f0 \'bd\'d3\'ca\'d5
+\f1 XML
+\f0 \'ca\'fd\'be\'dd\'c1\'f7
+\f1 \
+\
+	
+\f0 \cf19 \'b7\'a2\'cb\'cd\'cf\'fb\'cf\'a2\'b5\'c4
+\f1 xml
+\f0 \'b8\'f1\'ca\'bd
+\f1 :(
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5
+\f1 XML)\
+	\cf4 <message type=\'93
+\f0 \'b2\'bb\'ca\'c7\'cf\'b5\'cd\'b3\'b5\'c4
+\f1 chat, 
+\f0 \'d7\'d4\'bc\'ba\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'cf\'fb\'cf\'a2\'c0\'e0\'d0\'cd
+\f1 \'93 to="xiaoming@example.com">\
+		<
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5\'cf\'fb\'cf\'a2\'cc\'e5\'b1\'ea\'c7\'a9
+\f1 >
+\f0 \'bd\'ab\'b4\'ab\'ca\'e4\'b5\'c4\'ce\'c4\'bc\'fe\'ca\'b9\'d3\'c3
+\f1 base64
+\f0 \'d1\'b9\'cb\'f5\'b3\'c9\'b5\'c4
+\f1 NSString</
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5\'cf\'fb\'cf\'a2\'cc\'e5\'b1\'ea\'c7\'a9
+\f1 >\
+ 	<message />\cf19 \
+	\cf0 \
+	
+\f0 \cf4 \'b4\'fa\'c2\'eb
+\f1 :\
+		\cf0 \
+    \cf23 NSXMLElement\cf0  *message = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"message"\cf0 ];\
+    [message \cf8 addAttributeWithName\cf0 :\cf20 @"to"\cf0  \cf8 stringValue\cf0 :@\'93
+\f0 \'bd\'d3\'ca\'d5\'cf\'fb\'cf\'a2\'b5\'c4\'d3\'c3\'bb\'a7
+\f1 JID
+\f0 \'d7\'d6\'b7\'fb\'b4\'ae
+\f1 (zhangsan@xmpp
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'c3\'fb\'d7\'d6
+\f1 )\'94];\
+    [message \cf8 addAttributeWithName\cf0 :\cf20 @\'93type\'94\cf0  \cf8 stringValue\cf0 :\cf20 @\'93
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5\'cf\'fb\'cf\'a2\'c0\'e0\'d0\'cd
+\f1 \'94\cf0 ];\
+    \
+    \cf4 //1. 
+\f0 \'bd\'ab\'ce\'c4\'bc\'fe\'d7\'aa\'bb\'bb\'b3\'c9
+\f1 NSString(
+\f0 \'ce\'c4\'bc\'fe
+\f1 ->NSData->
+\f0 \'ca\'b9\'d3\'c3
+\f1 base64
+\f0 \'d1\'b9\'cb\'f5\'d7\'aa\'bb\'bb\'b3\'c9
+\f1 NSString)\cf0 \
+	\cf17 NSData\cf0  *imageData = \cf15 UIImagePNGRepresentation\cf0 (\cf14 image\cf0 );\
+    \cf17 NSString\cf0  *picStr = [imageData \cf15 base64EncodedStringWithOptions\cf0 :\cf15 NSDataBase64EncodingEndLineWithLineFeed\cf0 ];\
+	\
+	\cf4 //2. 
+\f0 \'b9\'b9\'d4\'ec\'d7\'d4\'b6\'a8\'d2\'e5\'cf\'fb\'cf\'a2\'cc\'e5\'b1\'ea\'c7\'a9
+\f1 (NSXMLElement)\
+\pard\tx770\pardeftab770\pardirnatural
+\cf23 	NSXMLElement\cf0  *imageString = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"imageString"\cf0 ];\
+    \
+	\cf4 //3. 
+\f0 \'b8\'f8\'d0\'a1\'cf\'fb\'cf\'a2\'cc\'e5\'c9\'e8\'d6\'c3
+\f1 value\cf0 \
+    [imageString \cf8 setStringValue\cf0 :picStr];\
+    \
+    \cf4 //6) <message /> 
+\f0 \'cc\'ed\'bc\'d3\'d7\'d3\'d4\'aa\'cb\'d8
+\f1  
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5\'cf\'fb\'cf\'a2\'cc\'e5\'d4\'aa\'cb\'d8
+\f1 \cf0 \
+    [message \cf8 addChild\cf0 :imageString];\
+\
+	\cf4 //7) 
+\f0 \'b7\'a2\'cb\'cd
+\f1 <message />\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0 	[[\cf9 self\cf0  \CocoaLigature1 sharedXMPPStream\CocoaLigature0 ] sendElement:message];\
+\
+\
+	\cf11 //
+\f0 \'b7\'a2\'cb\'cd
+\f1 Message
+\f0 \'ba\'f3
+\f1 , 
+\f0 \'d6\'b4\'d0\'d0\'b6\'d4\'b7\'bd\'d3\'c3\'bb\'a7\'b5\'c4
+\f1 \cf0 didReceiveMessage
+\f0 \cf11 \'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 \
+	//
+\f0 \'bd\'e2\'ce\'f6\'b3\'f6\'ce\'d2\'c3\'c7\'d7\'d4\'bc\'ba\'b6\'a8\'d2\'e5\'b5\'c4\'cf\'fb\'cf\'a2
+\f1 \
+	\cf4 <message type="chat" to="xiaoming@example.com"> \
+ 
+\f0 \'a1\'a1
+\f1   		<\cf20 imageString\cf4 >
+\f0 \'ce\'c4\'bc\'fe\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'c1\'f7
+\f1 <\cf20 imageString\cf4  />                 \
+	<message />\cf11 \
+\
+	\cf9 if\cf0  ([[[message \cf8 attributeForName\cf0 :\cf20 @"type"\cf0 ] \cf8 stringValue\cf0 ] \cf15 isEqualToString\cf0 :\cf20 @\'93
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5\'cf\'fb\'cf\'a2\'c0\'e0\'d0\'cd
+\f1 \'94\cf0 ]) \{\
+        \
+        \cf4 //1) 
+\f0 \'c8\'a1\'b3\'f6\'cd\'bc\'c6\'ac\'b5\'c4
+\f1 NSString\cf0 \
+        \cf17 NSString\cf0  *picString = [[message \cf8 elementForName\cf0 :\cf20 @"imageString"\cf0 ] \cf8 stringValue\cf0 ];\
+        \
+        \cf4 //2)
+\f0 \'bd\'ab\'cd\'bc\'c6\'ac\'d7\'d6\'b7\'fb\'b4\'ae
+\f1 ->base64->NSData\cf0 \
+        \cf17 NSData\cf0  *imageData = [[\cf17 NSData\cf0  \cf15 alloc\cf0 ] \cf15 initWithBase64EncodedString\cf0 :picString \cf15 options\cf0 :\cf15 NSDataBase64DecodingIgnoreUnknownCharacters\cf0 ];\
+        \
+        \cf4 //3)
+\f0 \'bd\'ab
+\f1 NSData->UIImage\cf0 \
+        \cf4 //        UIImage *image = [[UIImage alloc] initWithData:imageData];\cf0 \
+        \
+        \cf4 //4)
+\f0 \'b8\'fc\'d0\'c2
+\f1 UI\cf0 \
+        \cf9 __weak\cf0  \cf17 NSData\cf0  *weakImageData = imageData;\
+        \cf9 __weak\cf0  \cf10 XMPPOperation\cf0  *weakSelf = \cf9 self\cf0 ;\
+        \cf15 dispatch_async\cf0 (\cf15 dispatch_get_main_queue\cf0 (), ^\{\
+            \cf9 if\cf0  (weakSelf.\cf14 receivePic\cf0  != \cf9 nil\cf0 ) \{\
+                weakSelf.\cf14 receivePic\cf0 (weakImageData);\
+            \}\
+        \});\
+    \}\
+\
+		\CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf5 \
+	\cf19 \CocoaLigature0 3
+\f0 \'a3\'a9\'b7\'a2\'cb\'cd\'c6\'e4\'cb\'fb\'d7\'d4\'b6\'a8\'d2\'e5\'b8\'f1\'ca\'bd\'b5\'c4\'cf\'fb\'cf\'a2
+\f1  (
+\f0 \'ca\'b9\'d3\'c3\'b4\'f8\'cd\'e2\'b4\'ab\'ca\'e4
+\f1  \'97 
+\f0 \'ca\'b9\'d3\'c3
+\f1 Socket5
+\f0 \'b4\'ab\'ca\'e4\'ce\'c4\'bc\'fe
+\f1 )\
+	\
+	
+\f0 \'c0\'fd\'d7\'d3\'a3\'ba\'bf\'cd\'bb\'a7\'b6\'cb
+\f1 A 
+\f0 \'cf\'f2
+\f1  
+\f0 \'bf\'cd\'bb\'a7\'b6\'cb
+\f1 B , 
+\f0 \'b7\'a2\'cb\'cd\'ce\'c4\'bc\'fe
+\f1 \
+\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , A
+\f0 \'d1\'af\'ce\'ca
+\f1 B
+\f0 \'ca\'c7\'b7\'f1\'bf\'c9\'d2\'d4\'bd\'a8\'c1\'a2
+\f1 Socket
+\f0 \'c1\'ac\'bd\'d3
+\f1 (IQ
+\f0 \'c7\'eb\'c7\'f3\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6
+\f1 SI
+\f0 \'c7\'eb\'c7\'f3\'b0\'fc
+\f1 )\
+\
+	\cf4 \CocoaLigature0 //1. 
+\f0 \'b7\'a2\'cb\'cd
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3\'b8\'f1\'ca\'bd
+\f1 \
+	<iq type='set' id=\'91
+\f0 \'b5\'b1\'c7\'b0
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4\'b2\'d9\'d7\'f7
+\f1 ID\'92 to='test@dd.antkingdom.com' >\
+\pard\tx770\pardeftab770\pardirnatural
+\cf4         <si xmlns='{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/si'"}}{\fldrslt \cf24 http://jabber.org/protocol/si'}} id='si
+\f0 \'b2\'d9\'d7\'f7
+\f1 ID profile='{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/si/profile/file-transfer'"}}{\fldrslt \cf24 http://jabber.org/protocol/si/profile/file-transfer'}}>\
+            <file xmlns='{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/si/profile/file-transfer'"}}{\fldrslt \cf24 http://jabber.org/protocol/si/profile/file-transfer'}} name='backup.txt' size='2043'/>\
+            <feature xmlns='{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/feature-neg'"}}{\fldrslt \cf24 http://jabber.org/protocol/feature-neg'}}>\
+                <x xmlns='jabber:x:data' type='form'>\
+                    <field var='stream-method' type='list-single'>\
+                        <option><value>{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/bytestreams"}}{\fldrslt \cf24 http://jabber.org/protocol/bytestreams}}</value></option>\
+                    </field>\
+                </x>\
+            </feature>\
+        </si>\
+     </iq>\
+\
+	//2. 
+\f0 \'d7\'e9\'d7\'b0\'c9\'cf\'c3\'e6\'b5\'c4
+\f1 xml
+\f0 \'b8\'f1\'ca\'bd
+\f1 \
+	\cf23 NSXMLElement\cf0  *iq = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"iq"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"set"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"id"\cf0  \cf8 stringValue\cf0 :\cf20 @"
+\f0 \'c7\'eb\'c7\'f3
+\f1 ID"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"to"\cf0  \cf8 stringValue\cf0 :toJID];\
+    \
+    \cf23 NSXMLElement\cf0  *si = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"si"\cf0  \cf8 xmlns\cf0 :\cf20 @"http://jabber.org/protocol/si"\cf0 ];\
+    [si \cf8 addAttributeWithName\cf0 :\cf20 @"id"\cf0  \cf8 stringValue\cf0 :\cf20 @"si
+\f0 \'b5\'c4
+\f1 ID"\cf0 ];\
+    [si \cf8 addAttributeWithName\cf0 :\cf20 @"profile"\cf0  \cf8 stringValue\cf0 :\cf20 @"http://jabber.org/protocol/si/profile/file-transfer"\cf0 ];\
+    \
+    \cf23 NSXMLElement\cf0  *file = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"file"\cf0  \cf8 xmlns\cf0 :\cf20 @"http://jabber.org/protocol/si/profile/file-transfer"\cf0 ];\
+    [file \cf8 addAttributeWithName\cf0 :\cf20 @"name"\cf0  \cf8 stringValue\cf0 :\cf20 @"
+\f0 \'d2\'aa\'b4\'ab\'ca\'e4\'b5\'c4\'ce\'c4\'bc\'fe\'c3\'fb\'d7\'d6
+\f1 "\cf0 ];\
+    [file \cf8 addAttributeWithName\cf0 :\cf20 @"size"\cf0  \cf8 stringValue\cf0 :\cf20 @"
+\f0 \'d2\'aa\'b4\'ab\'ca\'e4\'b5\'c4\'ce\'c4\'bc\'fe\'b4\'f3\'d0\'a1
+\f1 "\cf0 ];\
+    \
+    \cf23 NSXMLElement\cf0  *feature = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"feature"\cf0  \cf8 xmlns\cf0 :\cf20 @"http://jabber.org/protocol/feature-neg"\cf0 ];\
+    \
+    \cf23 NSXMLElement\cf0  *x = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"x"\cf0  \cf8 xmlns\cf0 :\cf20 @"jabber:x:data"\cf0 ];\
+    [x \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"from"\cf0 ];\
+    \
+    \cf23 NSXMLElement\cf0  *field = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"field"\cf0 ];\
+    [field \cf8 addAttributeWithName\cf0 :\cf20 @"var"\cf0  \cf8 stringValue\cf0 :\cf20 @"stream-method"\cf0 ];\
+    [field \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"list-single"\cf0 ];\
+    \
+    \cf23 NSXMLElement\cf0  *option = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"option"\cf0 ];\
+    \cf23 NSXMLElement\cf0  *value = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"value"\cf0 ];\
+    [value \cf8 setStringValue\cf0 :\cf20 @"http://jabber.org/protocol/bytestreams"\cf0 ];\
+    \
+    [option \cf8 addChild\cf0 :value];\
+    [field \cf8 addChild\cf0 :option];\
+    [x \cf8 addChild\cf0 :field];\
+    [feature \cf8 addChild\cf0 :x];\
+    [si \cf8 addChild\cf0 :feature];\
+    [si \cf8 addChild\cf0 :file];\
+    [iq \cf8 addChild\cf0 :si];\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0 \CocoaLigature1 	\
+	\cf4 \CocoaLigature0 //3. 
+\f0 \'b7\'a2\'cb\'cd
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3
+\f1 \
+	\cf0 [[\cf9 self\cf0  \CocoaLigature1 sharedXMPPStream\CocoaLigature0 ] sendElement:iq];\CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 	\
+	\
+	\cf5 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 , 
+\f0 \CocoaLigature0 \'d4\'da
+\f1 B
+\f0 \'b5\'c4\'bd\'d3\'ca\'d5
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'d6\'d0
+\f1 (
+\f0 \'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6
+\f1 SI
+\f0 \'cf\'ec\'d3\'a6\'b0\'fc
+\f1 )\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf18 \
+	//SI
+\f0 \'c7\'eb\'c7\'f3\'b0\'fc\'b5\'c4
+\f1 XML
+\f0 \'b8\'f1\'ca\'bd
+\f1 \
+	\cf4 <iq id="gaim8215f9ef" to="si
+\f0 \'c7\'eb\'c7\'f3\'b0\'fc\'b7\'a2\'cb\'cd\'d5\'df
+\f1 jid
+\f0 \'d7\'d6\'b7\'fb\'b4\'ae
+\f1 " type="result">\
+\pard\tx770\pardeftab770\pardirnatural
+\cf4      <si id="gaim8215f9f0" xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/si"}}{\fldrslt \cf24 http://jabber.org/protocol/si}}">\
+     <feature xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/feature-neg"}}{\fldrslt \cf24 http://jabber.org/protocol/feature-neg}}">\
+     <x type="\cf11 submit\cf4 " xmlns="jabber:x:data">\
+     <field var="stream-method">\
+     <value>{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/bytestreams"}}{\fldrslt \cf24 http://jabber.org/protocol/bytestreams}}<value>\
+     </field>\
+     </x>\
+     </feature>\
+     </si>\
+     </iq>\
+\
+\
+     SI
+\f0 \'cf\'ec\'d3\'a6\'b0\'fc
+\f1  XML
+\f0 \'bd\'e1\'b9\'b9
+\f1 :\
+     <iq id="iq_13" to="iphone@xxxxx/xiff" from="android@xxxxx/Spark 2.6.3" type="result">\
+     <si xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/si"}}{\fldrslt \cf24 http://jabber.org/protocol/si}}">\
+     <feature xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/feature-neg"}}{\fldrslt \cf24 http://jabber.org/protocol/feature-neg}}">\
+     <x xmlns="jabber:x:data" type="submit">\
+     <field var="stream-method">\
+     <value>{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/bytestreams"}}{\fldrslt \cf24 http://jabber.org/protocol/bytestreams}}</value>\
+     <value>{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/ibb"}}{\fldrslt \cf24 http://jabber.org/protocol/ibb}}</value>\
+     </field>\
+     </x>\
+     </feature>\
+     </si>\
+     </iq>\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf5 	\CocoaLigature1 //
+\f0 \'b5\'da\'c8\'fd\'b2\'bd
+\f1 , \CocoaLigature0 B
+\f0 \'ca\'d5\'b5\'bd
+\f1 SI
+\f0 \'c7\'eb\'c7\'f3\'b0\'fc
+\f1 \
+	\cf0 - (\cf9 BOOL\cf0 )xmppStream:(\cf10 XMPPStream\cf0  *)sender didReceiveIQ:(\cf10 XMPPIQ\cf0  *)iq \{\
+		\
+		\cf9 if\cf0  ([[[iq \cf8 attributeForName\cf0 :\cf20 @"type"\cf0 ] \cf8 stringValue\cf0 ]\cf15 isEqualToString\cf0 :\cf20 @"set"\cf0 ]) \{\cf4 //set
+\f0 \'d0\'ce\'ca\'bd\'b5\'c4
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3
+\f1 , 
+\f0 \'b4\'ab\'b5\'dd\'ca\'fd\'be\'dd\'b5\'bd\'b6\'d4\'b7\'bd
+\f1 \cf0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf0         \
+        		\cf4 //1)
+\f0 \'bc\'c7\'c2\'bc\'bf\'cd\'bb\'a7\'b6\'cb
+\f1 Socket
+\f0 \'b5\'c4
+\f1 XMPPJID
+\f0 \'d7\'d6\'b7\'fb\'b4\'ae
+\f1 \cf0 \
+        		customJID = [[iq \cf8 from\cf0 ] \cf8 user\cf0 ];\
+        \
+        		\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'cb\'c4\'b2\'bd
+\f1 , \CocoaLigature0 B
+\f0 \'b8\'f8
+\f1 A
+\f0 \'b7\'a2\'cb\'cd
+\f1 SI
+\f0 \'cf\'ec\'d3\'a6\'b0\'fc
+\f1 \cf0 \
+        		[\cf9 self\cf0  \cf21 sendSIResponse\cf0 :iq];\cf18 //
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5
+\f1 sendSIResponse
+\f0 \'ba\'af\'ca\'fd
+\f1 ,
+\f0 \'b0\'b4\'d5\'d5
+\f1 XML
+\f0 \'b8\'f1\'ca\'bd\'d7\'e9\'d7\'b0
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3
+\f1 , 
+\f0 \'b2\'a2\'b7\'a2\'cb\'cd
+\f1 \cf0 \
+        \
+        		\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'ce\'e5\'b2\'bd
+\f1 , 
+\f0 \CocoaLigature0 \'c7\'eb\'c7\'f3
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 , 
+\f0 \'b2\'e9\'d1\'af\'bf\'c9\'d3\'c3\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'c1\'d0\'b1\'ed
+\f1 \cf0 \
+        		[\cf9 self\cf0  \cf21 requestXMPPServerForProxy\cf0 ];\cf18 //
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5
+\f1 \cf21 requestXMPPServerForProxy
+\f0 \'ba\'af\'ca\'fd
+\f1 \cf0 \
+    		\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+	\}\cf5 \
+	\
+	\cf0 - (\cf9 void\cf0 )requestXMPPServerForProxy \{\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0     \
+    		\cf4 /*\
+     		
+\f0 \'b2\'e9\'d1\'af\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'c1\'d0\'b1\'ed
+\f1 XML:\
+     		<iq id="iq_15" type="get">\
+				<query xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/disco#items"}}{\fldrslt \cf24 http://jabber.org/protocol/disco#items}}" />\
+			</iq>\
+     	*/\cf0 \
+    		\cf23 NSXMLElement\cf0  *iq = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"iq"\cf0 ];\
+    		[iq \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"get"\cf0 ];\
+    		\cf23 NSXMLElement\cf0  *query = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"query"\cf0  \cf8 xmlns\cf0 :\cf20 @"http://jabber.org/protocol/disco#items"\cf0 ];\
+    		[iq \cf8 addChild\cf0 :query];\
+    		[[\cf9 self\cf0  \cf8 sharedXMPPStreamInstance\cf0 ] \cf8 sendElement\cf0 :iq];\
+	\}\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf5 	\cf0 \
+\
+	\cf5 \
+	\CocoaLigature1 //
+\f0 \'b5\'da\'c1\'f9\'b2\'bd
+\f1 , 1) A
+\f0 \'ca\'d5\'b5\'bd
+\f1 B
+\f0 \'b7\'a2\'cb\'cd\'b5\'bd
+\f1 SI
+\f0 \'cf\'ec\'d3\'a6\'b0\'fc
+\f1  , 2) B
+\f0 \'ca\'d5\'b5\'bd
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'b7\'a2\'bb\'d8\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'c1\'d0\'b1\'ed
+\f1 \CocoaLigature0 \
+	\
+	\CocoaLigature1 1) A
+\f0 \'ca\'d5\'b5\'bd
+\f1 B
+\f0 \'b7\'a2\'cb\'cd\'b5\'bd
+\f1 SI
+\f0 \'cf\'ec\'d3\'a6\'b0\'fc
+\f1 \
+\
+	\cf18 //A
+\f0 \'b5\'c4\CocoaLigature0 \'bd\'d3\'ca\'d5
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'d6\'d0
+\f1 \
+	\cf0 - (\cf9 BOOL\cf0 )xmppStream:(\cf10 XMPPStream\cf0  *)sender didReceiveIQ:(\cf10 XMPPIQ\cf0  *)iq \{\
+		\
+		\
+	\}\cf5 \
+\
+	\CocoaLigature1 2) B
+\f0 \'ca\'d5\'b5\'bd
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'b7\'a2\'bb\'d8\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'c1\'d0\'b1\'ed
+\f1 \
+	\cf18 //B
+\f0 \'b5\'c4\CocoaLigature0 \'bd\'d3\'ca\'d5
+\f1 IQ
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'d6\'d0
+\f1 \
+	\cf4 /*\
+\pard\tx770\pardeftab770\pardirnatural
+\cf4                 
+\f0 \'b7\'b5\'bb\'d8\'b5\'c4
+\f1 XMPP
+\f0 \'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'c1\'d0\'b1\'ed
+\f1 XML:\
+             \
+                 <iq type="result" id="iq_15" to="iphone@192.168.1.xxx/xiff">\
+                     <query xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/disco#items"}}{\fldrslt \cf24 http://jabber.org/protocol/disco#items}}">\
+                         <item jid="proxy.xxxxxx" name="Socks 5 Bytestreams Proxy"/>\
+                         <item jid="pubsub.xxxxxx" name="Publish-Subscribe service"/>\
+                         <item jid="conference.xxxxxxx" name="
+\f0 \'b9\'ab\'b9\'b2\'b7\'bf\'bc\'e4
+\f1 "/>\
+                         <item jid="search.xxxxxx" name="User Search"/>\
+                     </query>  \
+                 </iq>\
+             */\
+\pard\tx770\pardeftab770\pardirnatural
+\cf18 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf18 	\cf0 - (\cf9 BOOL\cf0 )xmppStream:(\cf10 XMPPStream\cf0  *)sender didReceiveIQ:(\cf10 XMPPIQ\cf0  *)iq \{\
+				\
+		\cf9 if\cf0  ([iq.\cf8 type\cf0  \cf15 isEqualToString\cf0 :\cf20 @"result"\cf0 ]) \{\
+			\cf9 if\cf0  ([iq \cf8 elementForName\cf0 :\cf20 @"query"\cf0 ] != \cf9 nil\cf0 ) \{\
+					\cf23 NSXMLElement\cf0  *query = [iq \cf8 elementForName\cf0 :\cf20 @"query"\cf0 ];\
+					\cf9 if\cf0 ([[query \cf8 attributeStringValueForName\cf0 :\cf20 @"xmlns"\cf0 ] \cf15 isEqualToString\cf0 :\cf20 @"http://jabber.org/protocol/disco#items"\cf0 ]) \{\
+							\
+						\cf11 //1. 
+\f0 \'d1\'a1\'d6\'d0\'c4\'b3\'d2\'bb\'b8\'f6\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \
+						\cf17 NSArray\cf0  *items = [query \cf8 elementsForName\cf0 :\cf20 @"item"\cf0 ];\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0                 	  \cf17 NSString\cf0  *jid = \cf20 @""\cf0 ;\
+                	  \cf17 NSString\cf0  *name = \cf20 @""\cf0 ;\
+                \
+                	  \cf9 for\cf0  (\cf23 NSXMLElement\cf0  *item \cf9 in\cf0  items) \{\
+                    	\cf9 if\cf0  ([[[item \cf8 elementForName\cf0 :\cf20 @"name"\cf0 ] \cf8 stringValue\cf0 ] \cf15 isEqualToString\cf0 :\cf20 @"Socks 5 Bytestreams Proxy"\cf0 ]) \{\
+                        	name = \cf20 @"Socks 5 Bytestreams Proxy"\cf0 ;\
+                        	jid = [[item \cf8 elementForName\cf0 :\cf20 @"jid"\cf0 ] \cf8 stringValue\cf0 ];\
+                    	 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf11 \
+						//2. 
+\f0 \'c7\'eb\'c7\'f3
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7
+\f1 , 
+\f0 \'b2\'e9\'d1\'af\'d1\'a1\'d6\'d0\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'b5\'c4\'cf\'e0\'d0\'c5\'d0\'c5\'cf\'a2
+\f1 (ip
+\f0 \'b5\'d8\'d6\'b7
+\f1 , port)\
+						\cf9 if\cf0  (jid && name) \{\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0                     	\cf23 NSXMLElement\cf0  *iq_new = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"iq"\cf0 ];\
+                    	[iq_new \cf8 addAttributeWithName\cf0 :\cf20 @"id"\cf0  \cf8 stringValue\cf0 :\cf20 @"iqID"\cf0 ];\
+                    	[iq_new \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"get"\cf0 ];\
+                    	[iq_new \cf8 addAttributeWithName\cf0 :\cf20 @"to"\cf0  \cf8 stringValue\cf0 :jid];\
+                    \
+                    	\cf23 NSXMLElement\cf0  *query = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"query"\cf0  \cf8 xmlns\cf0 :\cf20 @"http://jabber.org/protocol/disco#items"\cf0 ];\
+                    \
+                    	[iq_new \cf8 addChild\cf0 :query];\
+                    \
+                    	[[\cf9 self\cf0  \cf8 sharedXMPPStreamInstance\cf0 ] \cf8 sendElement\cf0 :iq_new];\
+                \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+				\}\
+			\}\
+		\}\
+	\}\cf5 \
+\
+\
+	\CocoaLigature1 //
+\f0 \'b5\'da\'c6\'df\'b2\'bd
+\f1 , B
+\f0 \'ca\'d5\'b5\'bd
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'b7\'a2\'bb\'d8\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'be\'df\'cc\'e5\'d0\'c5\'cf\'a2
+\f1 \
+	\cf0 \CocoaLigature0 - (\cf9 BOOL\cf0 )xmppStream:(\cf10 XMPPStream\cf0  *)sender didReceiveIQ:(\cf10 XMPPIQ\cf0  *)iq \{\
+		\
+		\cf9 if\cf0  ([iq.\cf8 type\cf0  \cf15 isEqualToString\cf0 :\cf20 @"result"\cf0 ]) \{\
+			\cf9 if\cf0  ([iq \cf8 elementForName\cf0 :\cf20 @"query"\cf0 ] != \cf9 nil\cf0 ) \{\
+				\cf9 if\cf0  ([[query \cf8 attributeStringValueForName\cf0 :\cf20 @"xmlns"\cf0 ] \cf15 isEqualToString\cf0 :\cf20 @"http://jabber.org/protocol/bytestreams"\cf0 ]) \{\
+					\
+					\cf4 // B
+\f0 \'c8\'a1\'b3\'f6
+\f1 XMPP
+\f0 \'b7\'fe\'ce\'f1\'c6\'f7\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'ca\'fd\'be\'dd
+\f1 \
+					\cf9 if\cf0  ([query \cf8 elementForName\cf0 :\cf20 @"streamhost"\cf0 ]) \{\
+\pard\tx770\pardeftab770\pardirnatural
+\cf0                     \
+                    \cf17 NSString\cf0  *ipAddress = \cf20 @""\cf0 ;\
+                    \cf17 NSString\cf0  *port = \cf20 @""\cf0 ;\
+                    \cf17 NSString\cf0  *jid = \cf20 @""\cf0 ;\
+                    \
+                    \cf4 //1) 
+\f0 \'c8\'a1\'b3\'f6\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'a2\'bb\'d8\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'cf\'ea\'cf\'b8\'ca\'fd\'be\'dd
+\f1 (ip
+\f0 \'ba\'cd
+\f1 port)\cf0 \
+                    \cf9 if\cf0  ([query \cf8 childCount\cf0 ] > \cf25 0\cf0 ) \{\
+                        \cf23 NSXMLElement\cf0  *streamhost = [query \cf8 elementForName\cf0 :\cf20 @"streamhost"\cf0 ];\
+                        ipAddress = [streamhost \cf8 attributeStringValueForName\cf0 :\cf20 @"host"\cf0 ];\
+                        port = [streamhost \cf8 attributeStringValueForName\cf0 :\cf20 @"port"\cf0 ];\
+                        jid = [streamhost \cf8 attributeStringValueForName\cf0 :\cf20 @"jid"\cf0 ];\
+                    \}\
+                    \cf26 \
+\cf0                     \cf4 //2)
+\f0 \'b7\'fe\'ce\'f1
+\f1 Socket
+\f0 \'b4\'b4\'bd\'a8\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 Socket, 
+\f0 \'c1\'ac\'bd\'d3\'b5\'c3\'b5\'bd\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \cf0 \
+                    [\cf9 self\cf0  \cf21 createSocketAndStartListeningWithJID\cf0 :jid \cf8 ip\cf0 :ipAddress \cf8 port\cf0 :port];\
+                    \
+                    \cf4 //3)
+\f0 \'cd\'a8\'d6\'aa\'bf\'cd\'bb\'a7\'b7\'bd\'c1\'ac\'bd\'d3\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \cf0 \
+                    [\cf9 self\cf0  \cf21 notifyCostemToConnectProxyWithWithJID\cf0 :jid \cf8 ip\cf0 :ipAddress \cf8 port\cf0 :port \cf8 customJID\cf0 :customJID];\
+                \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+				\}	\
+			\}\
+		\}\
+	\}\
+\
+	\cf18 //B
+\f0 \'b4\'b4\'bd\'a8\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 Socket
+\f0 \'c1\'ac\'bd\'d3\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \cf0 \
+	- (\cf9 void\cf0 )createSocketAndStartListeningWithJID:(\cf17 NSString\cf0  *)jid ip:(\cf17 NSString\cf0  *)ip port:(\cf17 NSString\cf0  *)port\{\
+	\
+	\cf4 //1)
+\f0 \'b4\'b4\'bd\'a8
+\f1 Socket\cf0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf0     \cf10 TURNSocket\cf0  *serverSocket = [[\cf10 TURNSocket\cf0  \cf15 alloc\cf0 ] \cf8 initWithStream\cf0 :[\cf9 self\cf0  \cf8 sharedXMPPStreamInstance\cf0 ] \cf8 toJID\cf0 :[\cf10 XMPPJID\cf0  \cf8 jidWithString\cf0 :jid]];\
+    \
+    \cf4 //2)
+\f0 \'b1\'a3\'b4\'e6\'b5\'b1\'c7\'b0
+\f1 Socket
+\f0 \'b6\'d4\'cf\'f3
+\f1 \cf0 \
+    [\cf14 _serverSocketArray\cf0  \cf15 addObject\cf0 :serverSocket];\
+    \
+    \cf4 //3)
+\f0 \'bf\'aa\'c6\'f4
+\f1 Socket\cf0 \
+    [serverSocket \cf8 startWithDelegate\cf0 :\cf9 self\cf0  \cf8 delegateQueue\cf0 :
+\f0 \cf27 \'b8\'f8\'d2\'bb\'b8\'f6
+\f1 Socket
+\f0 \'b6\'d4\'cf\'f3\'b5\'c4\'b6\'d3\'c1\'d0
+\f1 \cf0 ];\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 	\}\
+\
+	\cf18 //B
+\f0 \'cd\'a8\'d6\'aa
+\f1 A
+\f0 \'bd\'a8\'c1\'a2
+\f1 Socket
+\f0 \'c1\'ac\'bd\'d3\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \cf5 \
+	\cf4 <iq to="android@192.168.1.xxxx/Spark 2.6.3" type="set" id="iq_19" from="iphone@192.168.1.xxx/xiff">\
+\pard\tx770\pardeftab770\pardirnatural
+\cf4      <query xmlns="{\field{\*\fldinst{HYPERLINK "http://jabber.org/protocol/bytestreams"}}{\fldrslt \cf24 http://jabber.org/protocol/bytestreams}}" mode="tcp" sid="82B0C697-C1DE-93F9-103E-481C8E7A3BD8">\
+         <streamhost port="7777" host="192.168.1.xxx" jid="proxy.192.168.1.xxx" />\
+     </query>\
+   </iq>\
+\
+   \cf0 - (\cf9 void\cf0 )notifyCostemToConnectProxyWithWithJID:(\cf17 NSString\cf0  *)jid ip:(\cf17 NSString\cf0  *)ip port:(\cf17 NSString\cf0  *)port customJID:cJid\{\
+    \
+    \cf23 NSXMLElement\cf0  *iq = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"iq"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"type"\cf0  \cf8 stringValue\cf0 :\cf20 @"set"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"id"\cf0  \cf8 stringValue\cf0 :\cf20 @"iqID"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"from"\cf0  \cf8 stringValue\cf0 :\cf20 @"
+\f0 \'b7\'fe\'ce\'f1\'b7\'bd
+\f1 XMPPJID"\cf0 ];\
+    [iq \cf8 addAttributeWithName\cf0 :\cf20 @"to"\cf0  \cf8 stringValue\cf0 :cJid];\
+    \
+    \cf23 NSXMLElement\cf0  *query = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"query"\cf0  \cf8 xmlns\cf0 :\cf20 @"http://jabber.org/protocol/bytestreams"\cf0 ];\
+    [query \cf8 addAttributeWithName\cf0 :\cf20 @"mode"\cf0  \cf8 stringValue\cf0 :\cf20 @"tcp"\cf0 ];\
+    [query \cf8 addAttributeWithName\cf0 :\cf20 @"sid"\cf0  \cf8 stringValue\cf0 :\cf20 @"
+\f0 \'c8\'ce\'d2\'e2\'c9\'fa\'b3\'c9
+\f1 "\cf0 ];\
+    \
+    \cf23 NSXMLElement\cf0  *streamhost = [\cf23 NSXMLElement\cf0  \cf8 elementWithName\cf0 :\cf20 @"streamhost"\cf0 ];\
+    [streamhost \cf8 addAttributeWithName\cf0 :\cf20 @"jid"\cf0  \cf8 stringValue\cf0 :jid];\
+    [streamhost \cf8 addAttributeWithName\cf0 :\cf20 @"port"\cf0  \cf8 stringValue\cf0 :port];\
+    [streamhost \cf8 addAttributeWithName\cf0 :\cf20 @"ip"\cf0  \cf8 stringValue\cf0 :ip];\
+    \
+    [query \cf8 addChild\cf0 :streamhost];\
+    [iq \cf8 addChild\cf0 :query];\
+    \
+    [[\cf9 self\cf0  \cf8 sharedXMPPStreamInstance\cf0 ] \cf8 sendElement\cf0 :iq];\
+   \}\
+\cf4 \
+\
+     \cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'b0\'cb\'b2\'bd
+\f1 , A
+\f0 \'bd\'d3\'ca\'d5\'b5\'bd
+\f1 B
+\f0 \'b5\'c4\'c1\'ac\'bd\'d3\'cd\'a8\'d6\'aa
+\f1 , 
+\f0 \'bd\'a8\'c1\'a2
+\f1 Socket
+\f0 \'c1\'ac\'bd\'d3\'b5\'bd\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7
+\f1 \
+\
+     //
+\f0 \'b5\'da\'be\'c5\'b2\'bd
+\f1 , A,B 
+\f0 \'b7\'d6\'b1\'f0\'cf\'f2\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'bc\'a4\'bb\'ee\'ce\'c4\'bc\'fe\'c1\'f7
+\f1 \
+\
+	//
+\f0 \'b5\'da\'ca\'ae\'b2\'bd
+\f1 , A,B 
+\f0 \'cd\'a8\'b9\'fd\'b4\'fa\'c0\'ed\'b7\'fe\'ce\'f1\'c6\'f7\'c0\'b4\'d6\'d0\'d7\'aa\'b4\'ab\'ca\'e4\'ce\'c4\'bc\'fe
+\f1 \cf4 \CocoaLigature0 \
+	\
+\
+\
+	
+\f0 \cf0 \'c1\'f9\'a1\'a2\cf19 \'c1\'c4\'cc\'ec\'ca\'d2\'b2\'d9\'d7\'f7
+\f1 \
+	\
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'d2\'bb\'b2\'bd
+\f1 , 
+\f0 \'b4\'b4\'bd\'a8
+\f1 XMPPRoom\
+	\
+	\cf4 \CocoaLigature0 //1. 
+\f0 \'c1\'c4\'cc\'ec\'ca\'d2\'d2\'b2\'ca\'c7\'d2\'bb\'b8\'f6
+\f1 XMPPJID
+\f0 \'b1\'ea\'ca\'b6
+\f1 \
+	\cf0 XMPPJID *roomJID = [XMPPJID jidWithString:@\'93\cf12 room01@qq.xzh.com\cf0 \'94];\cf4 \
+\
+	//2. 
+\f0 \'ca\'b5\'c0\'fd\'bb\'af
+\f1 XMPPRoom\
+	\cf0 XMPPRoomCoreDataStorage *roomStorage = [XMPPRoomCoreDataStorage sharedInstance];\
+	XMPPRoom *room = [[XMPPRoom alloc] initWithRoomStorage: mid:roomJID];\cf4 \
+\
+	//3. 
+\f0 \'bc\'a4\'bb\'ee
+\f1 XMPPRoom\
+	\cf0 [room active:_xmppStream];\cf4 \
+\
+	//4. 
+\f0 \'b8\'f8
+\f1 XMPPRoom
+\f0 \'cc\'ed\'bc\'d3\'b4\'fa\'c0\'ed\'ba\'cd\'b2\'d9\'d7\'f7\'b6\'d3\'c1\'d0
+\f1 \
+	\cf0 [room addDelegate:self delegateQueue:
+\f0 \'b8\'f8\'d2\'bb\'b8\'f6\'b5\'a5\'c0\'fd\'b6\'d3\'c1\'d0
+\f1 ];\
+\cf4 \
+	\cf5 \CocoaLigature1 //
+\f0 \'b5\'da\'b6\'fe\'b2\'bd
+\f1 , 
+\f0 \'c1\'c4\'cc\'ec\'ca\'d2\'b4\'b4\'bd\'a8\'b3\'c9\'b9\'a6\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf0 	- (void)xmppRoomDidCreate(XMPPRoom *)sender \{\
+		\
+	\}\
+\
+	\cf5 //
+\f0 \'b5\'da\'c8\'fd\'b2\'bd
+\f1 , 
+\f0 \'bc\'d3\'c8\'eb\'c1\'c4\'cc\'ec\'ca\'d2
+\f1 \
+\cf0 	[room joinRoomWithNickname:@\'93
+\f0 \'ea\'c7\'b3\'c6
+\f1 \'94 history:nil];\
+\
+	\cf5 //
+\f0 \'b5\'da\'cb\'c4\'b2\'bd
+\f1 , 
+\f0 \'bc\'d3\'c8\'eb\'c1\'c4\'cc\'ec\'ca\'d2\'b3\'c9\'b9\'a6\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd\'d6\'d0
+\f1  , 
+\f0 \'bb\'f1\'c8\'a1\'c1\'c4\'cc\'ec\'ca\'d2\'d0\'c5\'cf\'a2
+\f1 \
+	\cf0 - (void)xmppRoomDidJoin:(XMPPRoom *)sender \{\
+		\
+		[sender fetchConfigurationForm];\
+		[sender fetchBanList];\
+		[sender fetchMembersList];\
+		[sender fetchModerastorList];\
+	\}\
+\
+	\cf5 //
+\f0 \'b5\'da\'ce\'e5\'b2\'bd
+\f1 , 
+\f0 \'c8\'e7\'b9\'fb\'b7\'bf\'bc\'e4\'b4\'e6\'d4\'da
+\f1 , 
+\f0 \'d6\'b4\'d0\'d0\'b4\'fa\'c0\'ed\'b6\'d4\'cf\'f3\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 \
+	\cf0 - (void)xmppRoom:(XMPPRoom *)sender didNotFetchBanList:(XMPPIQ *)iqError;    \
+	- (void)xmppRoom:(XMPPRoom *)sender didNotFetchMembersList:(XMPPIQ *)iqError;    \
+	- (void)xmppRoom:(XMPPRoom *)sender didNotFetchModeratorsList:(XMPPIQ *)iqError;\
+\
+	\cf5 //
+\f0 \'b5\'da\'c1\'f9\'b2\'bd
+\f1 , 
+\f0 \'b3\'b7\'cf\'fa\'c1\'c4\'cc\'ec\'ca\'d2
+\f1 \
+	\cf0 [room reactive:_xmppStream];\
+	\
+	
+\f0 \cf18 //\'c1\'c4\'cc\'ec\'ca\'d2\'b3\'b7\'b5\'f4\'b5\'c4\'bb\'d8\'b5\'f7\'ba\'af\'ca\'fd
+\f1 \cf0 \
+	- (void)xmppRoomDidLeave:(XMPPRoom *)sender \{\
+	\
+	\}\
+\
+	\cf5 //
+\f0 \'b5\'da\'c6\'df\'b2\'bd
+\f1 , 
+\f0 \'c6\'e4\'cb\'fb\'b5\'c4\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8
+\f1 \
+	\cf0 \
+	\cf18 //
+\f0 \'d0\'c2\'c8\'cb\'bc\'d3\'c8\'eb\'c8\'ba\'c1\'c4
+\f1   \cf0 \
+	- (void)xmppRoom:(XMPPRoom *)sender occupantDidJoin:(XMPPJID *)occupantJID  \
+	\{  \
+\
+	\}  \
+	\
+	\cf18 //
+\f0 \'d3\'d0\'c8\'cb\'cd\'cb\'b3\'f6\'c8\'ba\'c1\'c4
+\f1 \cf0   \
+	- (void)xmppRoom:(XMPPRoom *)sender occupantDidLeave:(XMPPJID *)occupantJID  \
+	\{  \
+\
+	\}  \
+	\
+	\cf18 //
+\f0 \'d3\'d0\'c8\'cb\'d4\'da\'c8\'ba\'c0\'ef\'b7\'a2\'d1\'d4
+\f1 \cf0   \
+	- (void)xmppRoom:(XMPPRoom *)sender didReceiveMessage:(XMPPMessage *)message fromOccupant:(XMPPJID *)occupantJID  \
+	\{  \
+\
+	\} \CocoaLigature0 \
+	\
+	\
+}

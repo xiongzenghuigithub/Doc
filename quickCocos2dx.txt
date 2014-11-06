@@ -1,0 +1,35 @@
+quick-cocos2d-x 笔记:
+
+1. 创建项目:
+	
+	create_project.sh 命令 , 参数如下
+
+		-h show help
+	    -p package name
+	    -o project path (default is "current_dir/last_package_name")
+	    -r screen orientation (default is "portrait")
+	    -np dont create project files for platform
+	    -op only create project files
+	    -f overwrite exists files
+	    -c load options from config file
+	    -q quiet
+	    -t template dir
+
+2. 编写代码和
+	1)编写代码
+		Quick-Ccocos2dx项目/scripts/app/自定义目录
+
+	2)运行项目 
+		2.1)使用xcode 编译 quickcocos2dx项目根目录下得 proj.mac/proj.ios工程
+		2.2)运行Quick-Ccocos2dx项目/run-mac.sh运行项目
+
+	3)马上运行项目
+		对着quick-coso2dx模拟器, command+R
+
+
+3. 如果提示 "cocos2d.h not found" --> 运行 quick-x-setup 设置环境变量, 再使用xcode重新你编译
+
+4. LDT的lua代码提示
+	1)下载https://github.com/laomoi/lua_complete_eclipse
+	2)解压
+	3)LDT->Preferences->Lua->Excution Enviroments->Add->解压出来得文件夹里面得quicklua.zip
