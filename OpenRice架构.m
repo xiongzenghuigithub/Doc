@@ -1,15 +1,15 @@
 --------------------------------------------------------------------------------
 //搜索框的所有记录的要显示的图片类型
 typedef enum{
-    Tips_ShopId             = 0,
-    Tips_ChainId            = 1,
+    Tips_ShopId             = 0,		//商店 --》商店
+    Tips_ChainId            = 1,		//连锁 --》商店
     Tips_UserRecommedDish   = 2,
     Tips_SignatureDish      = 3,
     Tips_DistrictId         = 4,
     Tips_LandmarkId         = 5,
-    Tips_CuisineId          = 6,
-    Tips_DishId             = 7,
-    Tips_AmenityId          = 8,
+    Tips_CuisineId          = 6,		//菜式	
+    Tips_DishId             = 7,		//食品
+    Tips_AmenityId          = 8,		//美容 --》商店
     Tips_ThemeId            = 9,
     // RMS
     Tips_CompanyId          = 10
