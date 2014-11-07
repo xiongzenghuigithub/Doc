@@ -38,7 +38,11 @@
    
 /**< 异步并回调主线程，常用ui更新*/
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT , 0), ^{//自定义队列
-        dispatch_async(dispatch_get_main_queue(), ^{//UI主线程队列
+
+		//1. 做下载、存取数据库 ... 耗时代码
+
+		//2. 往主队列异步执行修改UI的Block
+        dispatch_async(dispatch_get_main_queue(), ^{
              //修改UI的数据
         });
     });
