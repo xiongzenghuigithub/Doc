@@ -1,0 +1,21 @@
+1. 替换源为淘宝的
+gem sources --remove https://rubygems.org/ 
+gem sources -a http://ruby.taobao.org/ 
+http://ruby.taobao.org/
+
+2. 下载安装
+sudo gem install cocoapods 
+
+使用CocoaPods导入类库:
+
+	1. 在工程根目录创建Podfile文件
+		touch Podfile
+
+	2. 在Podfile文件输入导入的类库
+		文本编辑器打开Podfile文件
+		
+		如:
+			platform :ios, '6.1'
+			pod 'RestKit', '~> 0.23.3'
+
+	3. 执行pod install命令 (在Podfile文件的当前路径)
