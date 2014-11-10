@@ -1,0 +1,37 @@
+//1. 实例化CLLocationManager
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    locationManager = [[CLLocationManager alloc]init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = 1000.f;
+}
+
+
+//2. 视图展现的时候分别开启和关闭定位服务
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [locationManager startUpdatingLocation];//进入View的时候开启定位
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [locationManager stopUpdatingLocation];//离开View的时候停止定位
+}
+
+
+//3. 位置改变时候回调函数
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation * currentLocation = [locations lastObject];
+    double  altitude = currentLocation.altitude;//高度
+    double  latitude = currentLocation.coordinate.latitude;
+    double  longitude = currentLocation.coordinate.longitude;
+
+    //locations[0] : 之前的位置
+    //locations[1] : 当前位置
+}
