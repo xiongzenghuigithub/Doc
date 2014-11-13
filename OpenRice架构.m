@@ -1,4 +1,48 @@
 --------------------------------------------------------------------------------
+
+对象.属性 = 值 的调用过程:
+
+RestaurantDetail的
+-(NSArray*) phoneArray
+
+--------------------------------------------------------------------------------
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+--------------------------------------------------------------------------------
+对于像城市列表等不会变动的服务器数据，只应该请求一次，就保存到本地，以后至访问本地数据库
+
+	1. 第一次异步加载数据
+	2. 使用和sqlite保存到本地DB文件
+			> 创建本地DB对应的表
+			> 将异步加载的数据, 作为数据记录插入到表
+	3. 可以做缓存
+		> 永远不变的数据
+		> 不常变的数据
+		> 隔一段时间变化的数据
+			> 超过时间, 重新请求服务器数据 ,再保存到本地
+
+
+--------------------------------------------------------------------------------
+城市切换点击事件:
+
+	CityListSelectionView.buttonUp方法
+
+城市获取list:
+	SettingManager:
+	getRegionListFromJSONData方法
+
+
+--------------------------------------------------------------------------------
+#define LOCAL_CURRENT_REGION                            @"CurrentRegion"
+#define LOCAL_CURRENT_REGION_NAME                       @"CurrentRegionName"
+#define LOCAL_CURRENT_REGION_TITLE_NAME					@"CurrentRegionTitleName"
+#define LOCAL_CURRENT_LANGUAGE                          @"CurrentLanguage"
+#define LOCAL_API_TOKEN_KEY                             @"ApiTokenKey"
+#define LOCAL_CURRENT_AREA_CODE                         @"CurrentAreaCode"
+--------------------------------------------------------------------------------
 //搜索框的所有记录的要显示的图片类型
 typedef enum{
     Tips_ShopId             = 0,		//商店 --》商店

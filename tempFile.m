@@ -73,7 +73,7 @@ P9021504
 git:  zenghui.xiong@pactera.com/Xiong_123456
 JIRA account:  wadexiong@openrice.com/Xzh_123456 
 Email:  zenghui.xiong@pactera.com/P9021504/Pactera2014
-skype: xiong.zenghui/kernel1989
+
 Full Name:  Wade Xiong
 
 
@@ -82,6 +82,8 @@ xiongzenghuigithub/Xzh_123456
 
 百度地图 xzh280320955/xzh1989
 
+skype1: wade_openrice_ios/xzh1989  280320955@qq.com
+skype2: xiong.zenghui/kernel1989 xiongzenghui@gmail.com
 -----------------------------------------------------------------------------
 
 用户名：charliewong   密码 ：111111
