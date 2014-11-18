@@ -88,4 +88,7 @@ skype2: xiong.zenghui/kernel1989 xiongzenghui@gmail.com
 
 用户名：charliewong   密码 ：111111
 -----------------------------------------------------------------------------
-
+api foursqure :
+https://api.foursquare.com/
+client_id:CMXDTX41EITPPW1GDNKSK3FAB0L4PYFG0HHCBTZ0L3M30QOX
+client_secret:ZSJMMWS5HVXQLY4WVIESVRYEF4BTBMAZF3KPEYTP1G1V2BQM
