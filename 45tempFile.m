@@ -92,3 +92,11 @@ api foursqure :
 https://api.foursquare.com/
 client_id:CMXDTX41EITPPW1GDNKSK3FAB0L4PYFG0HHCBTZ0L3M30QOX
 client_secret:ZSJMMWS5HVXQLY4WVIESVRYEF4BTBMAZF3KPEYTP1G1V2BQM
+
+
+facebook:
+
+wadexiong / Xzh_123456
+
+
+
